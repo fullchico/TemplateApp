@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {InputParticipant} from '../../components/InputParticipant';
+import {FormAddParticipant} from '../../components/form/FormAddParticipant';
 import {StatusBar} from '../../components/StatusBar';
 import {Container, VStack} from '../../components/ui';
 
@@ -9,9 +9,7 @@ export const Home: React.FC = () => {
     <Container>
       <StatusBar />
       <VStack>
-        <InputParticipant />
-        <InputParticipant />
-        <InputParticipant />
+        <FormAddParticipant />
       </VStack>
     </Container>
   );

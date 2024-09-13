@@ -7,8 +7,9 @@ export const VStack: React.FC<PropsWithChildren> = ({children}) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    display: 'flex',
     flexDirection: 'column',
+    height: '100%',
     gap: 8,
   },
 });

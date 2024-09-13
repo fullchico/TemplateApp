@@ -4,10 +4,18 @@ type InputProps = {
   placeholder?: string;
   value: string;
   onChangeText: (text: string) => void;
+  disabled?: boolean;
 };
 
 export const Input: React.FC<InputProps> = props => {
-  return <TextInput {...props} style={styles.input} />;
+  return (
+    <TextInput
+      {...props}
+      editable={!props.disabled}
+      selectTextOnFocus={!props.disabled}
+      style={styles.input}
+    />
+  );
 };
 
 const styles = StyleSheet.create({
