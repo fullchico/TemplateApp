@@ -3,14 +3,15 @@
   "compilerOptions": {
     "target": "ES2021",
     "jsx": "preserve",
-    "types": ["jest", "node"], // Adiciona os tipos de Jest e Node.js
-    "strict": true, // Habilita todas as verificações rigorosas do TypeScript
-    "noEmit": true, // Garante que nenhum arquivo JS será emitido
-    "isolatedModules": true, // Requer um arquivo de saída para cada módulo
-    "resolveJsonModule": true, // Permite importar módulos JSON
-    "skipLibCheck": true, // Evita verificações desnecessárias de bibliotecas
-    "allowSyntheticDefaultImports": true, // Permite importar padrões em CommonJS
-    "esModuleInterop": true // Facilita a interoperabilidade entre ESModules e CommonJS
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "types": ["jest", "node", "react"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules"]
 }

@@ -1,13 +1,12 @@
 import React from 'react';
-import ErrorBoundary from 'react-native-error-boundary';
 
-import {Home} from './screens/home';
-
-function App(): React.JSX.Element {
+import {WrapperProviders} from './providers';
+import {AppRouter} from './routes';
+function App() {
   return (
-    <ErrorBoundary>
-      <Home />
-    </ErrorBoundary>
+    <WrapperProviders>
+      <AppRouter />
+    </WrapperProviders>
   );
 }
 

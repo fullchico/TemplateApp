@@ -2,11 +2,11 @@ import {useNavigation} from '@react-navigation/native';
 import {Box, Button, Text, VStack} from 'native-base';
 import React from 'react';
 
-export const Home: React.FC = () => {
+export const Details: React.FC = () => {
   const navigate = useNavigation();
 
   const handleNavigate = () => {
-    navigate.navigate('Details');
+    navigate.navigate('Home');
   };
   return (
     <Box
@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
           _text={{color: 'text.gray.50'}}
           bg="primary.500"
           onPress={handleNavigate}>
-          Ir para detalhes
+          Voltar para home
         </Button>
 
         {/* Exemplo de card */}
