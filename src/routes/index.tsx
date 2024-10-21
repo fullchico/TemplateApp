@@ -4,8 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {RootStackParamList} from '../@types/navigation';
-import {Details} from '../screens/datails';
-import {Home} from '../screens/home';
+import {TodoView} from '../views/screens/TodoView';
 
 export const AppRouter: React.FC = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -13,12 +12,11 @@ export const AppRouter: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="TodoView"
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen component={Home} name="Home" />
-        <Stack.Screen component={Details} name="Details" />
+        <Stack.Screen component={TodoView} name="TodoView" />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,6 +1,5 @@
 export type RootStackParamList = {
-  Home: undefined;
-  Details: undefined;
+  TodoView: undefined;
 };
 
 export declare global {

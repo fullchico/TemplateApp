@@ -8,12 +8,12 @@ const config: Config.InitialOptions = {
     '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|@react-native|react-native-error-boundary)/)',
+    'node_modules/(?!(react-native|@react-native|react-native-error-boundary|react-native-safe-area-context)/)',
   ],
   moduleNameMapper: {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
   },
-  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/'],
+  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/', '/e2e/'],
   globals: {
     'ts-jest': {
       isolatedModules: true,

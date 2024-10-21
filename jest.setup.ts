@@ -6,3 +6,7 @@ jest.spyOn(console, 'warn').mockImplementation(() => {});
 
 // Suprimindo erros no console para evitar ruído nos testes
 jest.spyOn(console, 'error').mockImplementation(() => {});
+
+import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock';
+
+jest.mock('react-native-safe-area-context', () => mockSafeAreaContext);
